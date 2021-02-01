@@ -20,7 +20,7 @@ function Get-AzPublicContainers
                 $StorageContainers = Get-AzRmStorageContainer -StorageAccountName $StorageAccount.StorageAccountName -ResourceGroupName $StorageAccount.ResourceGroupName
                 foreach ($StorageContainer in ($StorageContainers | Where-Object PublicAccess -ne None))
                 {
-                    $PublicContainers += @{AzureSubscription = $AzureSubscription.Name; StorageAccount = $StorageAccount.StorageAccountName; StorageContainer = $StorageContainer.Name; PublicAccess = $StorageContainer.PublicAccess; LastModifiedTime = $StorageContainer.LastModifiedTime}
+                    $PublicContainers += [PSCustomObject]@{AzureSubscription = $AzureSubscription.Name; StorageAccount = $StorageAccount.StorageAccountName; StorageContainer = $StorageContainer.Name; PublicAccess = $StorageContainer.PublicAccess; LastModifiedTime = $StorageContainer.LastModifiedTime}
                 }
             }
             catch
