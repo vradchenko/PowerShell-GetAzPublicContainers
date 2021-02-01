@@ -6,9 +6,8 @@ Script connects to your Azure enviroment, gets all storage accounts from all sub
 Script uses read-only cmdlets: Connect-AzAccount, Get-AzSubscription, Select-AzSubscription, Get-AzStorageAccount, Get-AzRmStorageContainer.
 
 #### Prerequisites
-Script requires Azure modules (Az.Storage, Az.Accounts). Run `Install-Module Az.Storage, Az.Accounts` as administrator to install them.
-
-An Azure user account (with default Azure settings non-priviliged user account is ok).
+- Script requires Azure modules (Az.Storage, Az.Accounts). Run `Install-Module Az.Storage, Az.Accounts` as administrator to install them.
+- An Azure user account (with default Azure settings non-priviliged user account is ok).
 
 #### Usage
  1. Download the script
