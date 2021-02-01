@@ -26,3 +26,11 @@ An Azure user account (with default Azure settings non-priviliged user account i
  #Run the function (and save results to a variable)
  $containers = Get-AzPublicContainers
  ```
+#### Output
+
+Array of objects containing the following attributes of a public container:
+ - AzureSubscription
+ - StorageAccount
+ - StorageContainer
+ - PublicAccess
+ - LastModifiedTime
