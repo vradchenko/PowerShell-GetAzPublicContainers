@@ -4,7 +4,7 @@ Script to run in your Azure environment to identify public containers
 Script connects to your Azure enviroment, gets all storage accounts from all subscriptions and checks if any containers are public (have access as "Blob" or "Container")
 
 #### Prerequisites
-Script requires Azure modules (Az.Storage, Az.Accounts).
+Script requires Azure modules (Az.Storage, Az.Accounts). Run `Install-Module Az.Storage, Az.Accounts` as administrator to install them.
 
 An Azure user account (with default Azure settings non-priviliged user account is ok)
 
