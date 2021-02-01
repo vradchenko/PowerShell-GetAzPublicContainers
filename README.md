@@ -20,7 +20,7 @@ An Azure user account (with default Azure settings non-priviliged user account i
  #Update ExecutionPolicy for this session only to allow script to run
  Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
  #Import function from the script
- . .\Get-AzPublicContainers.ps
+ . .\Get-AzPublicContainers.ps1
  #Run the function (and save results to a variable)
  $containers = Get-AzPublicContainers
  ```
