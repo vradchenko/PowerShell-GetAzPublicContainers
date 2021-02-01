@@ -1,12 +1,14 @@
 # PowerShell-GetAzPublicContainers
-Script to run in your Azure environment to identify public containers
+Script to run in your Azure environment to identify public containers.
 
-Script connects to your Azure enviroment, gets all storage accounts from all subscriptions and checks if any containers are public (have access as "Blob" or "Container")
+Script connects to your Azure enviroment, gets all storage accounts from all subscriptions and checks if any containers are public (have access as "Blob" or "Container").
+
+Script uses read-only cmdlets: Connect-AzAccount, Get-AzSubscription, Select-AzSubscription, Get-AzStorageAccount, Get-AzRmStorageContainer.
 
 #### Prerequisites
 Script requires Azure modules (Az.Storage, Az.Accounts). Run `Install-Module Az.Storage, Az.Accounts` as administrator to install them.
 
-An Azure user account (with default Azure settings non-priviliged user account is ok)
+An Azure user account (with default Azure settings non-priviliged user account is ok).
 
 #### Usage
  1. Download the script
